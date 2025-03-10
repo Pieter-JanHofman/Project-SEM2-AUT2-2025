@@ -4,11 +4,6 @@
 #include <EEPROM.h> // opslaan van cali val voor LOADCELL
 LiquidCrystal_I2C lcd(0x27,16,2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 
-
-// denk niet dat dit nodig is !!
-#if defined(ESP8266)|| defined(ESP32) || defined(AVR) 
-#endif
-
 #define stepPin 4
 #define dirPin 7
 #define potPin A0 
